@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0932f30-f387-4ac3-8c21-d27080c26b8f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/escapeTheTrolls25Weekly.eml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/escapeTheTrolls25Weekly.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/escapeTheTrolls25Weekly/Coord.class" afterPath="$PROJECT_DIR$/bin/escapeTheTrolls25Weekly/Coord.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/escapeTheTrolls25Weekly/EscapeTheTrolls.class" afterPath="$PROJECT_DIR$/bin/escapeTheTrolls25Weekly/EscapeTheTrolls.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/escapeTheTrolls25Weekly/Hero.class" afterPath="$PROJECT_DIR$/bin/escapeTheTrolls25Weekly/Hero.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/escapeTheTrolls25Weekly/MapLoader.class" afterPath="$PROJECT_DIR$/bin/escapeTheTrolls25Weekly/MapLoader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/escapeTheTrolls25Weekly/MazeMap.class" afterPath="$PROJECT_DIR$/bin/escapeTheTrolls25Weekly/MazeMap.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/escapeTheTrolls25Weekly/MazeMapDrawer.class" afterPath="$PROJECT_DIR$/bin/escapeTheTrolls25Weekly/MazeMapDrawer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/escapeTheTrolls25Weekly/MazeMapDrawer.java" afterPath="$PROJECT_DIR$/src/escapeTheTrolls25Weekly/MazeMapDrawer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="escape-the-trolls.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,8 +49,8 @@
       <file leaf-file-name="MazeMapDrawer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/escapeTheTrolls25Weekly/MazeMapDrawer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.014059754">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.44815466">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -430,8 +424,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/escapeTheTrolls25Weekly/MazeMapDrawer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.014059754">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.44815466">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

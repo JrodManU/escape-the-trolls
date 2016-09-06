@@ -13,12 +13,13 @@ public class MazeMapDrawer extends JFrame {
 	public MazeMapDrawer(EscapeTheTrolls game) {
 		this.game = game;
 		initializeTextArea();
+		initializeJFrame();
 	}
 
 
 	public void draw() {
 		textArea.setText("");
-		
+
 		for(int x = 0; x < game.getMazeMap().getMapSize().x; x++) {
 			String row = "";
 			for(int y = 0; y < game.getMazeMap().getMapSize().y; y++) {
@@ -40,7 +41,9 @@ public class MazeMapDrawer extends JFrame {
 
 		displayFont = new Font("monospaced", Font.PLAIN, 16);
 		textArea.setFont(displayFont);
+	}
 
+	private void initializeJFrame() {
 		setLayout(new GridLayout());
 		add(textArea);
 		pack();
