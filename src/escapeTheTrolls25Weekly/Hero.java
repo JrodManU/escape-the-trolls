@@ -1,8 +1,8 @@
 package escapeTheTrolls25Weekly;
 
 public class Hero {
-	
-	private final char MARKER = 'O';
+	//going to use <>V^ for direction purposes, V default
+	private char MARKER = 'V';
 	
 	private EscapeTheTrolls game;
 	
