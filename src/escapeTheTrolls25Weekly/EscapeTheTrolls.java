@@ -7,14 +7,23 @@ public class EscapeTheTrolls {
 	}
 	
 	private MazeMap mazeMap;
+	private Hero hero;
 	
 	private void initiate() {
 		MapLoader mapLoader = new MapLoader();
+		
 		mazeMap = new MazeMap(mapLoader.loadMap("map"));
-		Hero hero = new Hero(this);
+		hero = new Hero(this);
+		
+		MazeMapDrawer mazeMapDrawer = new MazeMapDrawer(this);
+		mazeMapDrawer.draw();
 	}
 	
 	public MazeMap getMazeMap() {
 		return mazeMap;
+	}
+	
+	public Hero getHero() {
+		return hero;
 	}
 }

@@ -9,6 +9,7 @@ public class MazeMap {
 	private final char EXIT_CHAR = 'X';
 	
 	private char[][] map;
+	private Coord mapSize;
 	private Coord exit;
 	private ArrayList<Coord> openSpaces;
 	
@@ -16,6 +17,7 @@ public class MazeMap {
 	public MazeMap(char[][] map) {
 		this.map = map;
 		
+		mapSize = findMapSize();
 		exit = findExit();
 		openSpaces = findOpenSpaces();
 	}
@@ -26,6 +28,18 @@ public class MazeMap {
 	
 	public Coord randomOpenCoord() {
 		return openSpaces.get((int) Math.floor(Math.random() * openSpaces.size()));
+	}
+	
+	public Coord getMapSize() {
+		return mapSize;
+	}
+	
+	public char getCharAt(int x, int y) {
+		return map[x][y];
+	}
+	
+	private Coord findMapSize() {
+		return new Coord(map.length, map[0].length);
 	}
 	
 	//Top left corner is (0,0) 
