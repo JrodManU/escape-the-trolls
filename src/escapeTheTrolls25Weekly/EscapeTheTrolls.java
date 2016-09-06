@@ -7,6 +7,6 @@ public class EscapeTheTrolls {
 	}
 	
 	private void initiate() {
-		
+		MazeMapLoader mapLoader = new MazeMapLoader();
 	}
 }
