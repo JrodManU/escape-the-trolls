@@ -15,8 +15,8 @@ public class EscapeTheTrolls {
 		mazeMap = new MazeMap(mapLoader.loadMap("map"));
 		hero = new Hero(this);
 		
-		MazeMapDrawer mazeMapDrawer = new MazeMapDrawer(this);
-		mazeMapDrawer.draw();
+		ETTFrame ettFrame = new ETTFrame(this);
+		ettFrame.draw();
 	}
 	
 	public MazeMap getMazeMap() {

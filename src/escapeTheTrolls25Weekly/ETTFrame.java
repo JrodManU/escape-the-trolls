@@ -3,14 +3,14 @@ package escapeTheTrolls25Weekly;
 import javax.swing.*;
 import java.awt.*;
 
-public class MazeMapDrawer extends JFrame {
+public class ETTFrame extends JFrame {
 
 	private Font displayFont;
 
 	private EscapeTheTrolls game;
 	private JTextArea textArea;
 	
-	public MazeMapDrawer(EscapeTheTrolls game) {
+	public ETTFrame(EscapeTheTrolls game) {
 		this.game = game;
 		initializeTextArea();
 		initializeJFrame();
