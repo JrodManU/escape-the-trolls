@@ -2,6 +2,8 @@ package escapeTheTrolls25Weekly;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 public class ETTFrame extends JFrame {
 
@@ -9,7 +11,7 @@ public class ETTFrame extends JFrame {
 
 	private EscapeTheTrolls game;
 	private JTextArea textArea;
-	
+
 	public ETTFrame(EscapeTheTrolls game) {
 		this.game = game;
 		initializeTextArea();
@@ -41,6 +43,9 @@ public class ETTFrame extends JFrame {
 
 		displayFont = new Font("monospaced", Font.PLAIN, 16);
 		textArea.setFont(displayFont);
+
+		//textArea is focused so we add the key listener to it
+		textArea.addKeyListener(game.getInputHandler());
 	}
 
 	private void initializeJFrame() {

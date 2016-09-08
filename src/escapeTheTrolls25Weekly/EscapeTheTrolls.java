@@ -8,6 +8,7 @@ public class EscapeTheTrolls {
 	
 	private MazeMap mazeMap;
 	private Hero hero;
+	private InputHandler inputHandler;
 	
 	private void initiate() {
 		MapLoader mapLoader = new MapLoader();
@@ -25,5 +26,9 @@ public class EscapeTheTrolls {
 	
 	public Hero getHero() {
 		return hero;
+	}
+
+	public InputHandler getInputHandler() {
+		return inputHandler;
 	}
 }
