@@ -2,7 +2,11 @@ package escapeTheTrolls25Weekly;
 
 public class Hero {
 	//going to use <>V^ for direction purposes, V default
-	private char MARKER = 'V';
+	private final char UP_MARKER = '^';
+	private final char DOWN_MARKER = 'v';
+	private final char LEFT_MARKER = '<';
+	private final char RIGHT_MARKER = '>';
+	private char currentMarker = 'v';
 	
 	private EscapeTheTrolls game;
 	
@@ -19,32 +23,40 @@ public class Hero {
 	}
 	
 	public char getMarker() {
-		return MARKER;
+		return currentMarker;
 	}
 	
 	public void moveUp() {
-		if(!game.getMazeMap().wallAt(position.x - 1, position.y)) {
+		if(currentMarker != UP_MARKER) {
+			currentMarker = UP_MARKER;
+		} else if(!game.getMazeMap().wallAt(position.x - 1, position.y)) {
 			position.x -= 1;
 		}
 		game.getETTFrame().draw();
 	}
 	
 	public void moveDown() {
-		if(!game.getMazeMap().wallAt(position.x + 1, position.y)) {
+		if(currentMarker != DOWN_MARKER) {
+			currentMarker = DOWN_MARKER;
+		} else if(!game.getMazeMap().wallAt(position.x + 1, position.y)) {
 			position.x += 1;
 		}
 		game.getETTFrame().draw();
 	}
 	
 	public void moveLeft() {
-		if(!game.getMazeMap().wallAt(position.x, position.y - 1)) {
+		if(currentMarker != LEFT_MARKER) {
+			currentMarker = LEFT_MARKER;
+		} else if(!game.getMazeMap().wallAt(position.x, position.y - 1)) {
 			position.y -= 1;
 		}
 		game.getETTFrame().draw();
 	}
 	
 	public void moveRight() {
-		if(!game.getMazeMap().wallAt(position.x, position.y + 1)) {
+		if(currentMarker != RIGHT_MARKER) {
+			currentMarker = RIGHT_MARKER;
+		} else if(!game.getMazeMap().wallAt(position.x, position.y + 1)) {
 			position.y += 1;
 		}
 		game.getETTFrame().draw();
