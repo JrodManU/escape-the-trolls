@@ -32,7 +32,6 @@ public class ETTFrame extends JFrame {
 					row += game.getMazeMap().getCharAt(x, y);
 				}
 			}
-			System.out.println(row);
 			textArea.append(row + "\n");
 		}
 	}

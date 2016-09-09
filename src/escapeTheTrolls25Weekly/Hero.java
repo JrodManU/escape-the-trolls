@@ -21,4 +21,32 @@ public class Hero {
 	public char getMarker() {
 		return MARKER;
 	}
+	
+	public void moveUp() {
+		if(!game.getMazeMap().wallAt(position.x - 1, position.y)) {
+			position.x -= 1;
+		}
+		game.getETTFrame().draw();
+	}
+	
+	public void moveDown() {
+		if(!game.getMazeMap().wallAt(position.x + 1, position.y)) {
+			position.x += 1;
+		}
+		game.getETTFrame().draw();
+	}
+	
+	public void moveLeft() {
+		if(!game.getMazeMap().wallAt(position.x, position.y - 1)) {
+			position.y -= 1;
+		}
+		game.getETTFrame().draw();
+	}
+	
+	public void moveRight() {
+		if(!game.getMazeMap().wallAt(position.x, position.y + 1)) {
+			position.y += 1;
+		}
+		game.getETTFrame().draw();
+	}
 }

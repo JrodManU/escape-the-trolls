@@ -18,11 +18,10 @@ public class MapLoader {
 		}
 		
 		char[][] map = new char[mapData.size()][];
-		
+		//turn into char array
 		for(int i = 0; i < mapData.size(); i++) {
 			map[i] = mapData.get(i).toCharArray();
 		}
-		
 		return map;
 	}
 }
